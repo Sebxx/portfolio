@@ -1,0 +1,259 @@
+/*
+	THEME.CSS
+	@Sebxx's portfolio
+*/
+
+a {
+    color: #F4F5ED;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+	color: #DC4E00;
+}
+
+body {
+    font-family: "sans-serif", helvetica, arial;
+    height: 100%;
+    margin: 0;
+    position: fixed!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #dc4e00;
+}
+
+header {
+    display: inline-block;
+    position: relative;
+}
+
+header #sidebar.collapsed {
+    width: 50px
+}
+
+header #sidebar.collapsed figure,
+header #sidebar.collapsed .socialMedia {
+    display: none;
+}
+
+header #sidebar{
+	background: #929487 none repeat scroll 0 0;
+	display: inline-block;
+	max-height: 100%;
+	min-height: 100%;
+	position: fixed;
+	top: 0;
+	width: 20%;
+	z-index: 1;
+}
+
+nav {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+nav ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+nav ul.sideMenu li {
+    display: block;
+    position: relative;
+    width: auto;
+}
+
+ul.sideMenu li a {
+    display: block;
+    padding: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+ul.sideMenu li a span {
+    padding-left: 30px;
+}
+
+nav ul.sideMenu li .submenu {
+    display: none;
+}
+
+nav ul.sideMenu li a.submenu::after {
+    content: "\f107";
+    font-family: "Fontawesome";
+}
+
+nav ul.sideMenu li a.subitem {
+    display: block;
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 10px 10px 10px 50px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+nav ul.sideMenu li a:hover {
+	background: #DC4E00;
+	color: #F4F5ED;
+}
+
+footer {
+    background: #929487 none repeat scroll 0 0;
+    bottom: 0;
+    color: #f4f5ed;
+    display: block;
+    font-size: 0.6em;
+    line-height: 1.5;
+    margin-left: 20%;
+    padding: 10px 0;
+    position: relative;
+    width: 80%;
+}
+
+.footerContent > strong {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+#sidebar figure {
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+    max-width: 250px;
+    overflow: hidden;
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+#sidebar figure.profilePicture img {
+	border-radius: 100%;
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    width: auto;
+}
+
+#sidebar .profilePicture > strong {
+    color: #f4f5ed;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+#sidebar .profilePicture > small {
+    color: #f4f5ed;
+    display: block;
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+#siteContainer {
+	background: #F4F5ED;
+	color: #929487;
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: -20px;
+    position: relative;
+    width: 80%;
+}
+
+.site {
+	width: 100%;
+}
+
+.socialMedia {
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.socialMedia a i {
+    font-size: 1.8em;
+    line-height: 1;
+    padding: 5px 10px;
+    transition: all 0.5s ease 0s;
+}
+
+.socialMedia a i.fa-github:hover {
+	color: #333333;
+}
+
+.socialMedia a i.fa-linkedin:hover {
+	color: #1985BC;
+}
+
+.socialMedia a i.fa-twitter:hover {
+	color: #55ACEE;
+}
+
+#siteContainer .heading {
+    background: rgba(0, 0, 0, 0) url("../assets/img/cover.jpg") repeat scroll center center / cover ;
+    display: block;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.heading > figure {
+    display: block;
+    height: 200px;
+    left: calc(50% - 300px);
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 75px;
+    width: 500px;
+}
+
+.heading > figure img {
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+}
+
+.heading > figure span {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    bottom: 0;
+    color: #f4f5ed;
+    display: inline-block;
+    left: 100px;
+    padding: 10px 10px 10px 100px;
+    position: absolute;
+    width: 300px;
+}
+
+.heading figure strong {
+    display: block;
+}
+
+.siteContent {
+    box-shadow: 0 -20px 25px 15px #f4f5ed;
+    padding: 30px;
+    position: relative;
+}
+
+.siteContent section {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
