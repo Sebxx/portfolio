@@ -15,8 +15,10 @@ a:hover {
 }
 
 body {
+    background: #f4f5ed;
     font-family: "sans-serif", helvetica, arial;
-    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
     margin: 0;
     position: fixed!important;
 }
@@ -164,7 +166,7 @@ footer {
     line-height: 1.5;
     margin-left: 20%;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     transition: all ease 0.5s;
     width: 80%;
 }
@@ -219,11 +221,12 @@ footer.collapsed {
 }
 
 #siteContainer {
-	background: #F4F5ED;
-	color: #929487;
+    color: #929487;
     display: inline-block;
     margin-left: 20%;
     margin-top: -20px;
+    max-height: 100%;
+    min-height: 100%;
     position: relative;
     transition: all ease 0.5s;
     width: 80%;
