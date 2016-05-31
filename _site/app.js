@@ -17,7 +17,7 @@ angular.module('sebxxPortfolio', [
 
 .config(['$urlRouterProvider', '$locationProvider',  function ($urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/');
-    //$locationProvider.html5Mode(true).hashPrefix('!');
+    $locationProvider.html5Mode(true).hashPrefix('!');
 }])
 
 .run(['$rootScope', function($rootScope){

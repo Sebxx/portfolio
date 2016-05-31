@@ -8,7 +8,7 @@
 <html>
 
 <head>
-    <!--<base href="/">-->
+    <base href="/">
     <title>@Sebxx's portfolio</title>
     <meta charset="UTF-8" />
     <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" name="viewport" />
@@ -20,40 +20,40 @@
     <meta content="summary" name="twitter:card" />
     <meta content="@Sebxx | frontend developer | Medellín - Colombia" name="twitter:description" />
     <meta content="@Sebxx | frontend developer | Medellín - Colombia - @Sebxx | frontend developer | Medellín - Colombia" name="twitter:title" />
-    <link href="/site/assets/img/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="/site/css/theme.css" />
-    <link rel="stylesheet" type="text/css" href="/site/assets/fonts/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="/site/js/angular/ngScrollbars/jquery.mCustomScrollbar.min.css"/>
+    <link href="site/assets/img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="site/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="site/assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="site/js/angular/ngScrollbars/jquery.mCustomScrollbar.min.css"/>
 
     <!-- CSS dependencies -->
     
     <!-- JS dependencies -->
    
-    <script type="text/javascript" src="/site/js/jquery/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
-    <script type="text/javascript" src="/site/js/angular/angular.js"></script>
-    <script type="text/javascript" src="/site/js/angular/ngRoute.js"></script>
-    <script type="text/javascript" src="/site/js/angular/angular-animate/angular-animate.js"></script>
-    <script type="text/javascript" src="/site/js/angular/angular-sanitize/angular-sanitize.js"></script>
-    <script type="text/javascript" src="/site/js/angular/angular-ui-router/release/angular-ui-router.js"></script>
-    <script type="text/javascript" src="/site/js/angular/angulartouch.min.js"></script>
-    <script type="text/javascript" src="/site/js/angular/angular-filter.min.js"></script>
-    <script type="text/javascript" src="/site/js/angular/ngScrollbars/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="/site/js/angular/ngScrollbars/ngScrollbar.min.js"></script>
+    <script type="text/javascript" src="site/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="site/js/angular/angular.js"></script>
+    <script type="text/javascript" src="site/js/angular/ngRoute.js"></script>
+    <script type="text/javascript" src="site/js/angular/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="site/js/angular/angular-sanitize/angular-sanitize.js"></script>
+    <script type="text/javascript" src="site/js/angular/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="site/js/angular/angulartouch.min.js"></script>
+    <script type="text/javascript" src="site/js/angular/angular-filter.min.js"></script>
+    <script type="text/javascript" src="site/js/angular/ngScrollbars/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="site/js/angular/ngScrollbars/ngScrollbar.min.js"></script>
     <!-- App & modules -->
-    <script type="text/javascript" src="/app.js"></script>
-    <script type="text/javascript" src="/site/modules/global/global.module.js"></script>
-    <script type="text/javascript" src="/site/modules/profile/profile.module.js"></script>
-    <script type="text/javascript" src="/site/modules/profile/profile.controller.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="site/modules/global/global.module.js"></script>
+    <script type="text/javascript" src="site/modules/profile/profile.module.js"></script>
+    <script type="text/javascript" src="site/modules/profile/profile.controller.js"></script>
     
 </head>
 
 <body ng-app="sebxxPortfolio" ng-scrollbars ng-scrollbars-config="mainScroll">
     
     <div id="top" class="site">
-        <ng-include src="'/site/modules/global/header.html'"></ng-include>
+        <ng-include src="'site/modules/global/header.html'"></ng-include>
         <div id="siteContainer" ng-view></div>
-        <ng-include src="'/site/modules/global/footer.html'"></ng-include>
+        <ng-include src="'site/modules/global/footer.html'"></ng-include>
     </div>
 
 </body>

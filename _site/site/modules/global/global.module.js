@@ -10,9 +10,9 @@
       }) 
       .controller('HeaderController', HeaderController);
 
-      HeaderController.$inject = ['$scope'];
+      HeaderController.$inject = ['$scope', '$location'];
 
-      function HeaderController($scope){
+      function HeaderController($scope, $location){
         $scope.menuItems = [
             {
               name: 'Profile',
@@ -70,5 +70,18 @@
             },
             scrollInertia: 500
           };
+          $scope.goToPath = function (e, path) {
+            console.log(path);
+            if (jQuery(e.currentTarget).hasClass("submenuParent")) 
+                jQuery(e.currentTarget).next(".submenu").toggle(250);
+            else
+              $location.path(path);
+          }
+          $scope.collapseMenu = function() {
+            jQuery("header #sidebar, #siteContainer, footer").addClass("collapsed");
+          }
+          $scope.expandMenu = function () {
+            jQuery("header #sidebar, #siteContainer, footer").removeClass("collapsed"); 
+          }
       }
 })();

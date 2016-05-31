@@ -30,24 +30,74 @@ header {
     position: relative;
 }
 
-header #sidebar.collapsed {
+header #sidebar.collapsed,
+header #sidebar.collapsed nav {
     width: 50px
 }
 
+header #sidebar.collapsed i.fa-bars {
+    display: block;
+}
+
 header #sidebar.collapsed figure,
-header #sidebar.collapsed .socialMedia {
+header #sidebar.collapsed .socialMedia,
+header #sidebar.collapsed ul.sideMenu li a span,
+header #sidebar i.fa-bars,
+header #sidebar.collapsed i.fa-compress {
     display: none;
 }
 
-header #sidebar{
+header #sidebar.collapsed ul.sideMenu li a {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header #sidebar.collapsed i.fa-bars {
+    color: #f4f5ed;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    padding: 30px 0;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+header #sidebar.collapsed i.fa-bars:hover {
+    background: #f4f5ed;
+    color: #dc4e00;
+}
+
+header #sidebar.collapsed nav ul.sideMenu li a.submenuParent::after {
+    content: "";
+}
+
+header #sidebar {
 	background: #929487 none repeat scroll 0 0;
 	display: inline-block;
 	max-height: 100%;
 	min-height: 100%;
 	position: fixed;
 	top: 0;
+    transition: all ease 0.5s;
 	width: 20%;
 	z-index: 1;
+}
+
+header #sidebar i.fa-compress {
+    color: #f4f5ed;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2em;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    transition: all ease 0.5s;
+    z-index: 1;
+}
+
+header #sidebar i.fa-compress:hover {
+    color: #dc4e00;
+    transform: rotate(45deg);
 }
 
 nav {
@@ -71,6 +121,7 @@ nav ul.sideMenu li {
 }
 
 ul.sideMenu li a {
+    cursor: pointer;
     display: block;
     padding: 20px;
     position: relative;
@@ -85,7 +136,7 @@ nav ul.sideMenu li .submenu {
     display: none;
 }
 
-nav ul.sideMenu li a.submenu::after {
+nav ul.sideMenu li a.submenuParent::after {
     content: "\f107";
     font-family: "Fontawesome";
 }
@@ -114,7 +165,13 @@ footer {
     margin-left: 20%;
     padding: 10px 0;
     position: relative;
+    transition: all ease 0.5s;
     width: 80%;
+}
+
+footer.collapsed {
+    margin-left: 50px;
+    width: auto;
 }
 
 .footerContent > strong {
@@ -168,7 +225,13 @@ footer {
     margin-left: 20%;
     margin-top: -20px;
     position: relative;
+    transition: all ease 0.5s;
     width: 80%;
+}
+
+#siteContainer.collapsed {
+    margin-left: 50px;
+    width: auto;
 }
 
 .site {
