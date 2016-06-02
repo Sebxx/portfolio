@@ -323,3 +323,64 @@ footer.collapsed {
     position: relative;
     width: 80%;
 }
+
+
+/*
+    RESPONSIVE queries
+*/
+
+@media screen and (max-width: 980px) {
+    #sidebar figure,
+    ul.sideMenu li a span,
+    header #sidebar i.fa-compress {
+        display: none;
+    }
+    .socialMedia,
+    header #sidebar {
+        width: 50px;
+    }
+    #sidebar .mCSB_container {
+        width: 50px!important;
+    }
+    .socialMedia {
+        margin: 20px 0;
+    }
+    ul.sideMenu li a {
+        padding: 15px;
+    }
+    nav ul.sideMenu li a.submenuParent::after {
+        content: "";
+    }
+    nav ul.sideMenu li .submenu {
+        left: 50px;
+        position: absolute;
+        top: -40px;
+        width: 230px;
+        z-index: 99999;
+    }
+    footer {
+        margin-left: 50px;
+        width: 100%;
+    }
+    #siteContainer {
+        margin-left: 50px;
+        width: auto;
+    }
+    #siteContainer .heading {
+        height: 250px;
+    }
+    .heading > figure {
+        height: 100px;
+        left: 50px;
+        top: 55px;
+        width: 350px;
+    }
+    .heading > figure img {
+        width: 100px;
+    }
+    .heading > figure span {
+        left: 50px;
+        width: 250px;
+        padding: 10px 10px 10px 60px;
+    }
+}
