@@ -42,7 +42,7 @@
                 },
                 {
                   name: 'Mobile',
-                  es: 'móvil',
+                  es: 'Móvil',
                   url: '/portfolio/mobile',
                   hasChildren: false
                 },
@@ -56,7 +56,7 @@
             },
             {
               name: 'Contact',
-              es: 'contacto',
+              es: 'Contacto',
               url: '/contact',
               icon: 'fa-whatsapp',
               hasChildren: false

@@ -15,8 +15,10 @@ a:hover {
 }
 
 body {
+    background: #f4f5ed;
     font-family: "sans-serif", helvetica, arial;
-    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
     margin: 0;
     position: fixed!important;
 }
@@ -164,7 +166,7 @@ footer {
     line-height: 1.5;
     margin-left: 20%;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     transition: all ease 0.5s;
     width: 80%;
 }
@@ -219,11 +221,12 @@ footer.collapsed {
 }
 
 #siteContainer {
-	background: #F4F5ED;
-	color: #929487;
+    color: #929487;
     display: inline-block;
     margin-left: 20%;
     margin-top: -20px;
+    max-height: 100%;
+    min-height: 100%;
     position: relative;
     transition: all ease 0.5s;
     width: 80%;
@@ -319,4 +322,100 @@ footer.collapsed {
     margin: 0 auto;
     position: relative;
     width: 80%;
+}
+
+
+/*
+    RESPONSIVE queries
+*/
+
+/*
+    LAPTOPS, TABLETS & iPADs (portrait & landscape)
+*/
+
+@media screen and (max-width: 980px) {
+    #sidebar figure,
+    ul.sideMenu li a span,
+    header #sidebar i.fa-compress {
+        display: none;
+    }
+    .socialMedia,
+    header #sidebar {
+        width: 50px;
+    }
+    #sidebar .mCSB_container {
+        width: 50px!important;
+    }
+    .socialMedia {
+        margin: 20px 0;
+    }
+    ul.sideMenu li a {
+        padding: 15px;
+    }
+    nav ul.sideMenu li a.submenuParent::after {
+        content: "";
+    }
+    nav ul.sideMenu li .submenu {
+        left: 50px;
+        position: absolute;
+        top: -40px;
+        width: 230px;
+        z-index: 99999;
+    }
+    footer {
+        margin-left: 50px;
+        width: calc(100% - 50px);
+    }
+    #siteContainer {
+        margin-left: 50px;
+        width: auto;
+    }
+    #siteContainer .heading {
+        height: 250px;
+    }
+    .heading > figure {
+        height: 100px;
+        left: 50px;
+        top: 55px;
+        width: 350px;
+    }
+    .heading > figure img {
+        width: 100px;
+    }
+    .heading > figure span {
+        left: 50px;
+        width: 250px;
+        padding: 10px 10px 10px 60px;
+    }
+}
+
+/*
+    SMARTPHONES
+*/
+
+@media screen and (max-width: 360px) {
+    .heading > figure {
+        height: 175px;
+        left: 0;
+        top: 20px;
+    }
+    .heading > figure img {
+        left: 25px;
+    }
+    .heading > figure span {
+        border-bottom-left-radius: 90px;
+        bottom: 10px;
+        height: 90px;
+        left: 0;
+    }
+    .heading figure strong {
+        left: 30px;
+        position: absolute;
+        top: 50px;
+    }
+    .heading > figure span small {
+        left: 50px;
+        position: absolute;
+        top: 75px;
+    }
 }

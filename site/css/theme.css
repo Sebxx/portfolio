@@ -329,6 +329,10 @@ footer.collapsed {
     RESPONSIVE queries
 */
 
+/*
+    LAPTOPS, TABLETS & iPADs (portrait & landscape)
+*/
+
 @media screen and (max-width: 980px) {
     #sidebar figure,
     ul.sideMenu li a span,
@@ -360,7 +364,7 @@ footer.collapsed {
     }
     footer {
         margin-left: 50px;
-        width: 100%;
+        width: calc(100% - 50px);
     }
     #siteContainer {
         margin-left: 50px;
@@ -382,5 +386,36 @@ footer.collapsed {
         left: 50px;
         width: 250px;
         padding: 10px 10px 10px 60px;
+    }
+}
+
+/*
+    SMARTPHONES
+*/
+
+@media screen and (max-width: 360px) {
+    .heading > figure {
+        height: 175px;
+        left: 0;
+        top: 20px;
+    }
+    .heading > figure img {
+        left: 25px;
+    }
+    .heading > figure span {
+        border-bottom-left-radius: 90px;
+        bottom: 10px;
+        height: 90px;
+        left: 0;
+    }
+    .heading figure strong {
+        left: 30px;
+        position: absolute;
+        top: 50px;
+    }
+    .heading > figure span small {
+        left: 50px;
+        position: absolute;
+        top: 75px;
     }
 }
