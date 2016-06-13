@@ -339,7 +339,7 @@ footer.collapsed {
 
 @media screen and (max-width: 980px) {
     #sidebar figure,
-    ul.sideMenu li a span,
+    ul.sideMenu li > a span,
     header #sidebar i.fa-compress {
         display: none;
     }
@@ -354,7 +354,7 @@ footer.collapsed {
         margin: 20px 0;
     }
     ul.sideMenu li a {
-        padding: 15px;
+        padding: 10px 30px 10px 10px;
     }
     nav ul.sideMenu li a.submenuParent::after {
         content: "";
@@ -363,8 +363,6 @@ footer.collapsed {
         left: 50px;
         position: absolute;
         top: -40px;
-        width: 230px;
-        z-index: 99999;
     }
     footer {
         margin-left: 50px;
