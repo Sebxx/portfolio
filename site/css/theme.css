@@ -165,7 +165,7 @@ footer {
     line-height: 1.5;
     margin-left: 20%;
     padding: 10px 0;
-    position: fixed;
+    position: absolute;
     transition: all ease 0.5s;
     width: 80%;
 }
@@ -312,6 +312,7 @@ footer.collapsed {
 
 .siteContent {
     box-shadow: 0 -20px 25px 15px #f4f5ed;
+    margin-bottom: 100px;
     padding: 30px;
     position: relative;
 }
