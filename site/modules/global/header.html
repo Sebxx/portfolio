@@ -24,18 +24,13 @@
 					<a ng-class="{'submenuParent': item.hasChildren}" ng-click="goToPath($event, item.url)" onclick="return false;">
 						<i class="fa {{item.icon}}" aria-hidden="true"></i><span>{{item.name}}</span>
 					</a>
-					<!--<div ng-class="{'submenu': item.hasChildren}" ng-if="item.hasChildren">
-						<a ng-repeat="subitem in item.children" class="subitem" ng-click="goToPath($event, subitem.url)" onclick="return false;">
-							<i class="fa {{subitem.icon}}" aria-hidden="true"></i><span>{{subitem.name}}</span>
-						</a>
-					</div>-->
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div ng-class="{'submenu': item.hasChildren}" ng-if="item.hasChildren">
+					<div ng-class="{'submenu': item.hasChildren}" ng-if="item.hasChildren">
 						<a ng-repeat="subitem in item.children" class="subitem" ng-click="goToPath($event, subitem.url)" onclick="return false;">
 							<i class="fa {{subitem.icon}}" aria-hidden="true"></i><span>{{subitem.name}}</span>
 						</a>
 					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
