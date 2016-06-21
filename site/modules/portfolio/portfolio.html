@@ -1,0 +1,27 @@
+<!--
+// =============================================================================
+// PORTFOLIO.HTML
+// @Sebxx' portfolio
+// =============================================================================
+-->
+<div class="heading">
+	<figure>
+		<img src="site/assets/img/profile.jpg">
+		<span>
+			<strong>Sebastián Pulgarín Yepes</strong><small>frontend developer</small>
+		</span>
+	</figure>
+</div>
+<div class="siteContent portfolioContainer">
+	<div class="portfolioItem" ng-repeat="item in items">
+		<figure>
+			<img ng-src="{{item.thumbnail}}">
+			<div class="entry">
+				<span ng-bind-html="item.title | to_trusted" id="title"></span>
+				<div id="technologies">
+					<span ng-repeat="tech in item.technologies" ng-bind-html="tech.name | to_trusted"></span>
+				</div>
+			</div>
+		</figure>
+	</div>
+</div>

@@ -20,16 +20,10 @@ body {
     min-height: 100%;
     max-height: 100%;
     margin: 0;
-    position: fixed!important;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color: #dc4e00;
-}
-
-header {
-    display: inline-block;
-    position: relative;
 }
 
 header #sidebar.collapsed,
@@ -78,7 +72,7 @@ header #sidebar {
 	display: inline-block;
 	max-height: 100%;
 	min-height: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
     transition: all ease 0.5s;
 	width: 20%;
@@ -134,8 +128,16 @@ ul.sideMenu li a span {
     padding-left: 30px;
 }
 
+ul.sideMenu li a.subitem span {
+    padding: 10px;
+}
+
 nav ul.sideMenu li .submenu {
+    background:  #929487;
     display: none;
+    left: 273px;
+    position: absolute;
+    top: -100px;
 }
 
 nav ul.sideMenu li a.submenuParent::after {
@@ -147,7 +149,7 @@ nav ul.sideMenu li a.subitem {
     display: block;
     font-size: 0.8em;
     margin: 0 auto;
-    padding: 10px 10px 10px 50px;
+    padding: 10px;
     position: relative;
     text-transform: capitalize;
 }
@@ -166,7 +168,7 @@ footer {
     line-height: 1.5;
     margin-left: 20%;
     padding: 10px 0;
-    position: fixed;
+    position: absolute;
     transition: all ease 0.5s;
     width: 80%;
 }
@@ -227,7 +229,7 @@ footer.collapsed {
     margin-top: -20px;
     max-height: 100%;
     min-height: 100%;
-    position: relative;
+    position: fixed;
     transition: all ease 0.5s;
     width: 80%;
 }
@@ -313,6 +315,7 @@ footer.collapsed {
 
 .siteContent {
     box-shadow: 0 -20px 25px 15px #f4f5ed;
+    margin-bottom: 100px;
     padding: 30px;
     position: relative;
 }
@@ -324,6 +327,99 @@ footer.collapsed {
     width: 80%;
 }
 
+.portfolioContainer .portfolioItem {
+    cursor: pointer;
+    background: rgba(146, 148, 135, 0.04) none repeat scroll 0 0;
+    display: inline-block;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease 0.5s;
+    -moz-transition: all 0.5s ease 0.5s;
+    -webkit-transition: all 0.5s ease 0.5s;
+    -ms-transition: all 0.5s ease 0.5s;
+    -o-transition: all 0.5s ease 0.5s;
+    width: 250px;
+}
+
+.portfolioContainer .portfolioItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+.portfolioContainer .portfolioItem > figure {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.portfolioContainer .portfolioItem figure > img {
+    display: block;
+    padding: 10px;
+    position: relative;
+    width: 230px;
+}
+
+
+.portfolioContainer .portfolioItem .entry {
+    background: rgba(220, 78, 0, 0.6) none repeat scroll 0 0;
+    color: #ffffff;
+    display: block;
+    height: 150px;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    transition: all 0.5s ease 0.5s;
+    -moz-transition: all 0.5s ease 0.5s;
+    -webkit-transition: all 0.5s ease 0.5s;
+    -ms-transition: all 0.5s ease 0.5s;
+    -o-transition: all 0.5s ease 0.5s;
+    top: 120px;
+    width: 250px;
+}
+
+.portfolioContainer .portfolioItem .entry #title {
+    display: block;
+    padding: 0 5px;
+    position: relative;
+    transition: all 0.5s ease 0.5s;
+    -moz-transition: all 0.5s ease 0.5s;
+    -webkit-transition: all 0.5s ease 0.5s;
+    -ms-transition: all 0.5s ease 0.5s;
+    -o-transition: all 0.5s ease 0.5s;
+}
+
+.entry > #technologies {
+    display: none;
+}
+
+.portfolioContainer .portfolioItem:hover .entry {
+    transition: all 0.5s ease 0.5s;
+    -moz-transition: all 0.5s ease 0.5s;
+    -webkit-transition: all 0.5s ease 0.5s;
+    -ms-transition: all 0.5s ease 0.5s;
+    -o-transition: all 0.5s ease 0.5s;
+    transform: translateY(-120px);
+    -moz-transform: translateY(-120px);
+    -webkit-transform: translateY(-120px);
+    -ms-transform: translateY(-120px);
+    -o-transform: translateY(-120px);
+}
+
+.portfolioContainer .portfolioItem:hover .entry #title {
+    font-weight: bolder;
+    transition: all 0.5s ease 0.5s;
+    -moz-transition: all 0.5s ease 0.5s;
+    -webkit-transition: all 0.5s ease 0.5s;
+    -ms-transition: all 0.5s ease 0.5s;
+    -o-transition: all 0.5s ease 0.5s;
+    transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
 
 /*
     RESPONSIVE queries
@@ -335,7 +431,7 @@ footer.collapsed {
 
 @media screen and (max-width: 980px) {
     #sidebar figure,
-    ul.sideMenu li a span,
+    ul.sideMenu li > a span,
     header #sidebar i.fa-compress {
         display: none;
     }
@@ -350,7 +446,7 @@ footer.collapsed {
         margin: 20px 0;
     }
     ul.sideMenu li a {
-        padding: 15px;
+        padding: 10px 30px 10px 10px;
     }
     nav ul.sideMenu li a.submenuParent::after {
         content: "";
@@ -359,8 +455,6 @@ footer.collapsed {
         left: 50px;
         position: absolute;
         top: -40px;
-        width: 230px;
-        z-index: 99999;
     }
     footer {
         margin-left: 50px;
@@ -403,7 +497,6 @@ footer.collapsed {
         left: 25px;
     }
     .heading > figure span {
-        border-bottom-left-radius: 90px;
         bottom: 10px;
         height: 90px;
         left: 0;

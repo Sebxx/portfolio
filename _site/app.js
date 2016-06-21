@@ -10,7 +10,8 @@ angular.module('sebxxPortfolio', [
     'ngSanitize',
     'ngScrollbars',
     'sebxx.global',
-    'sebxx.profile'
+    'sebxx.profile',
+    'sebxx.portfolio'
 ])
 
 .value('_', window._)

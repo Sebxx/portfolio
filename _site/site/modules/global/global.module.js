@@ -62,14 +62,6 @@
               hasChildren: false
             }
           ];
-          $scope.config = {
-            autoHideScrollbar: true,
-            theme: 'minimal-dark',
-            advanced:{
-              updateOnContentResize: true
-            },
-            scrollInertia: 500
-          };
           $scope.goToPath = function (e, path) {
             console.log(path);
             if (jQuery(e.currentTarget).hasClass("submenuParent")) 
