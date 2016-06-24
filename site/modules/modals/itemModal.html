@@ -1,0 +1,20 @@
+<div class="modal" id="portfolioItemModal" ng-controller="ItemModalController" ng-click="checkNDestroy($event)">
+    <div class="modalContainer">
+        <figure>
+            <img ng-src="{{item.thumbnail}}">
+            <span>
+                <a href="{{item.web}}" target="_blank" ng-bind-html="item.web | to_trusted"></a>
+            </span>
+        </figure>
+        <div class="itemDescription">
+            <h2 ng-bind-html="item.title | to_trusted"></h2>
+            <div class="technos">
+                <span ng-repeat="tech in item.technologies">
+                    {{technologies[tech].name | to_trusted}}
+                    <img ng-src="{{technologies[tech].icon}}">
+                </span>
+            </div>
+            <div class="text" ng-bind-html="item.description | to_trusted"></div>
+        </div>
+    </div>
+</div>

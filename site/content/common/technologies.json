@@ -1,0 +1,22 @@
+{
+	"js": {
+		"name": "JavaScript",
+		"icon": "site/content/img/icons/js.png"
+	},
+	"html5": {
+		"name": "HTML5",
+		"icon": "site/content/img/icons/html5.png"
+	},
+	"css3": {
+		"name": "CSS3",
+		"icon": "site/content/img/icons/css3.png"
+	},
+	"angular": {
+		"name": "AngularJS",
+		"icon": "site/content/img/icons/angular.png"
+	},
+	"node": {
+		"name": "NodeJS",
+		"icon": "site/content/img/icons/node.png"
+	}
+}

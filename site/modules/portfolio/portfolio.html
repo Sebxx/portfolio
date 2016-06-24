@@ -13,15 +13,16 @@
 	</figure>
 </div>
 <div class="siteContent portfolioContainer">
-	<div class="portfolioItem" ng-repeat="item in items">
+	<div class="portfolioItem" ng-repeat="item in items" ng-click="launchModal(item)">
 		<figure>
 			<img ng-src="{{item.thumbnail}}">
 			<div class="entry">
 				<span ng-bind-html="item.title | to_trusted" id="title"></span>
 				<div id="technologies">
-					<span ng-repeat="tech in item.technologies" ng-bind-html="tech.name | to_trusted"></span>
+					<img ng-repeat="tech in item.technologies" ng-src="{{technologies[tech].icon}}">
 				</div>
 			</div>
 		</figure>
 	</div>
+	<ng-include src="'site/modules/modals/itemModal.html'"></ng-include>
 </div>

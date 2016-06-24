@@ -10,6 +10,7 @@ angular.module('sebxxPortfolio', [
     'ngSanitize',
     'ngScrollbars',
     'sebxx.global',
+    'sebxx.modals',
     'sebxx.profile',
     'sebxx.portfolio'
 ])
@@ -44,6 +45,8 @@ angular.module('sebxxPortfolio', [
     };
 })
 
-.controller('MainCtrl', ['$scope', function ($scope) {
-    
+.controller('MainCtrl', ['$rootScope', '$http', function ($rootScope, $http) {
+    $http.get("site/content/common/technologies.json").success(function(res){
+        $rootScope.technologies = res;
+    });
 }]);

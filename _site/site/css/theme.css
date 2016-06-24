@@ -391,7 +391,19 @@ footer.collapsed {
 }
 
 .entry > #technologies {
-    display: none;
+    display: block;
+    max-height: 158px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    top: 30px;
+}
+
+.entry #technologies img {
+    display: inline-block;
+    opacity: 0.6;
+    position: relative;
+    width: 42px;
 }
 
 .portfolioContainer .portfolioItem:hover .entry {
@@ -419,6 +431,94 @@ footer.collapsed {
     -webkit-transform: translateY(30px);
     -ms-transform: translateY(30px);
     -o-transform: translateY(30px);
+}
+
+
+.modal {
+    background: rgba(146, 148, 135, 0.6) none repeat scroll 0 0;
+    display: none;
+    height: calc(100% + 500px);
+    left: 0;
+    position: absolute;
+    top: -500px;
+    width: 100%;
+    z-index: 9;
+}
+
+.modal .modalContainer {
+    background: #f1f1f1 none repeat scroll 0 0;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    top: 200px;
+    width: 70%;
+}
+
+
+.modal .modalContainer > figure {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    width: 50%;
+}
+
+
+.modal .modalContainer figure > img {
+    margin: 5%;
+    width: 90%;
+}
+
+
+.modal .modalContainer figure span a {
+    color: #dc4e00;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal .modalContainer .itemDescription {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 49%;
+}
+
+.modal .modalContainer .technos {
+    display: block;
+    padding: 0 5%;
+    position: relative;
+    width: 90%;
+}
+
+.modal .modalContainer .technos > span {
+    display: inline-block;
+    font-size: 12px;
+    height: 80px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+.modal .modalContainer .technos img {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    width: 50px;
+}
+
+.modal .modalContainer .text {
+    display: block;
+    font-size: 15px;
+    line-height: 1.1;
+    padding: 0 5%;
+    position: relative;
 }
 
 /*

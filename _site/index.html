@@ -43,6 +43,8 @@
     <!-- App & modules -->
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="site/modules/global/global.module.js"></script>
+    <script type="text/javascript" src="site/modules/modals/modals.module.js"></script>
+    <script type="text/javascript" src="site/modules/modals/modals.controller.js"></script>
     <script type="text/javascript" src="site/modules/profile/profile.module.js"></script>
     <script type="text/javascript" src="site/modules/profile/profile.controller.js"></script>
     <script type="text/javascript" src="site/modules/portfolio/portfolio.module.js"></script>
@@ -52,7 +54,7 @@
 
 <!--<body ng-app="sebxxPortfolio" ng-scrollbars ng-scrollbars-config="mainScroll">-->
 <body ng-app="sebxxPortfolio">
-    <div id="top" class="site">
+    <div id="top" class="site" ng-controller="MainCtrl">
         <ng-include src="'site/modules/global/header.html'"></ng-include>
         <div id="siteContainer" ng-view ng-scrollbars ng-scrollbars-config="mainScroll"></div>
         <ng-include src="'site/modules/global/footer.html'"></ng-include>
