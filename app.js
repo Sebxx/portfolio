@@ -46,6 +46,8 @@ angular.module('sebxxPortfolio', [
 })
 
 .controller('MainCtrl', ['$rootScope', '$http', function ($rootScope, $http) {
+    $rootScope.profProfile = "JavaScript fullstack developer";
+    $rootScope.profilePic = "site/assets/img/profile.jpg";
     $http.get("site/content/common/technologies.json").success(function(res){
         $rootScope.technologies = res;
     });

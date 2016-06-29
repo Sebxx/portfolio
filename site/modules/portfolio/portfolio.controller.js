@@ -5,10 +5,10 @@
 		.module('sebxx.portfolio')
 		.controller('PortfolioController', PortfolioController);
 
-		PortfolioController.$inject = ['$scope', '$http', '$rootScope'];
+		PortfolioController.$inject = ['$scope', '$http', '$rootScope', '$routeParams'];
 
-		function PortfolioController($scope, $http, $rootScope) {
-			$http.get("site/content/portfolio/web/items.json").success(function(res){
+		function PortfolioController($scope, $http, $rootScope, $routeParams) {
+			$http.get("site/content/portfolio/" + $routeParams.type + "/items.json").success(function(res){
 				$scope.items = res;
 			});
 			$scope.launchModal = function(el) {

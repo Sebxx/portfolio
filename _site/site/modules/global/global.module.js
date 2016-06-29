@@ -45,12 +45,6 @@
                   es: 'Móvil',
                   url: '/portfolio/mobile',
                   hasChildren: false
-                },
-                {
-                  name: 'Others',
-                  es: 'Otros',
-                  url: '/portfolio/others',
-                  hasChildren: false
                 }
               ]
             },
@@ -62,12 +56,15 @@
               hasChildren: false
             }
           ];
-          $scope.goToPath = function (e, path) {
+          $scope.goToPath = function (e, path, type) {
             console.log(path);
             if (jQuery(e.currentTarget).hasClass("submenuParent")) 
                 jQuery(e.currentTarget).next(".submenu").toggle(250);
-            else
+            else {
               $location.path(path);
+              jQuery(".submenu").hide(250);
+            }
+            
           }
           $scope.collapseMenu = function() {
             jQuery("header #sidebar, #siteContainer, footer").addClass("collapsed");

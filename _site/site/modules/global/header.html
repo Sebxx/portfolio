@@ -9,9 +9,9 @@
 	<div id="sidebar">
 		<i class="fa fa-compress" aria-hidden="true" ng-click="collapseMenu()"></i>
 		<figure class="profilePicture">
-			<img src="site/assets/img/profile.jpg" />
+			<img ng-src="{{profilePic}}" />
 			<strong>@Sebxx</strong>
-			<small>Frontend developer</small>
+			<small ng-bind-html="profProfile | to_trusted"></small>
 		</figure>
 		<div class="socialMedia">
 			<a href="https://github.com/Sebxx/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -22,11 +22,11 @@
 			<i class="fa fa-bars" aria-hidden="true" ng-click="expandMenu()"></i>
 			<ul class="sideMenu">
 				<li ng-repeat="item in menuItems">
-					<a ng-class="{'submenuParent': item.hasChildren}" ng-click="goToPath($event, item.url)" onclick="return false;">
+					<a ng-class="{'submenuParent': item.hasChildren}" ng-click="goToPath($event, item.url, 'parent')" onclick="return false;">
 						<i class="fa {{item.icon}}" aria-hidden="true"></i><span>{{item.name}}</span>
 					</a>
 					<div ng-class="{'submenu': item.hasChildren}" ng-if="item.hasChildren">
-						<a ng-repeat="subitem in item.children" class="subitem" ng-click="goToPath($event, subitem.url)" onclick="return false;">
+						<a ng-repeat="subitem in item.children" class="subitem" ng-click="goToPath($event, subitem.url, 'subitem')" onclick="return false;">
 							<i class="fa {{subitem.icon}}" aria-hidden="true"></i><span>{{subitem.name}}</span>
 						</a>
 					</div>

@@ -6,38 +6,35 @@
 -->
 <div class="heading">
 	<figure>
-		<img src="site/assets/img/profile.jpg">
+		<img ng-src="{{profilePic}}">
 		<span>
-			<strong>Sebastián Pulgarín Yepes</strong><small>frontend developer</small>
+			<strong>Sebastián Pulgarín Yepes</strong><small ng-bind-html="profProfile | to_trusted"></small>
 		</span>
 	</figure>
 </div>
 <div class="siteContent">
 	<section class="description">
-		<h3>Who am I</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3 ng-bind-html="profile.whoami.esTitle | to_trusted"></h3>
+		<p ng-bind-html="profile.whoami.es | to_trusted"></p>
 	</section>
 	<section class="description">
-		<h3>Profesional profile</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3 ng-bind-html="profile.profprofile.esTitle | to_trusted"></h3>
+		<p ng-bind-html="profile.profprofile.es | to_trusted"></p>
 	</section>
 	<section class="description">
-		<h3>What do I do</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3 ng-bind-html="profile.profprofile.skills.esTitle | to_trusted"></h3>
+		<div class="level" ng-repeat="level in profile.profprofile.skills.objs">
+			<h4 ng-bind-html="level.esLevel | to_trusted"></h4>
+			<section class="levelType" ng-repeat="type in level.skills">
+				<h5 ng-bind-html="type.type | to_trusted"></h5>
+				<ul class="items">
+					<li ng-repeat="item in type.items" ng-bind-html="item.name | to_trusted"></li>
+				</ul>
+			</section>
+		</div>
+	</section>
+	<section class="description">
+		<h3 ng-bind-html="profile.whatdoido.esTitle | to_trusted"></h3>
+		<p ng-bind-html="profile.whatdoido.es | to_trusted"></p>
 	</section>
 </div>

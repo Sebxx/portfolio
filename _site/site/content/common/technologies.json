@@ -18,5 +18,37 @@
 	"node": {
 		"name": "NodeJS",
 		"icon": "site/content/img/icons/node.png"
+	},
+	"mongo": {
+		"name": "MongoDB",
+		"icon": "site/content/img/icons/mongo.png"
+	},
+	"php": {
+		"name": "PHP",
+		"icon": "site/content/img/icons/php.png"
+	},
+	"wp": {
+		"name": "WordPress",
+		"icon": "site/content/img/icons/wp.png"
+	},
+	"mysql": {
+		"name": "MySql",
+		"icon": "site/content/img/icons/mysql.png"
+	},
+	"cordova": {
+		"name": "Apache Cordova",
+		"icon": "site/content/img/icons/cordova.png"
+	},
+	"ionic": {
+		"name": "Ionic",
+		"icon": "site/content/img/icons/ionic.png"
+	},
+	"android": {
+		"name": "Android",
+		"icon": "site/content/img/icons/android.png"
+	},
+	"ios": {
+		"name": "iOS",
+		"icon": "site/content/img/icons/ios.png"
 	}
 }
