@@ -5,9 +5,9 @@
         .module('sebxx.modals')
         .controller('ItemModalController', ItemModalController);
 
-        ItemModalController.$inject = ['$rootScope', '$scope'];
+        ItemModalController.$inject = ['$rootScope', '$scope', '$window'];
 
-        function ItemModalController($rootScope, $scope){
+        function ItemModalController($rootScope, $scope, $window){
             
             $rootScope.modalInit = function(el) {
                 $scope.item = el;
@@ -26,8 +26,8 @@
                 }
             };
             $scope.goToExternal = function(e, url) {
-                console.log(url);
-                var win = window.open(url, '_blank');
+                console.log(e);
+                $window.open(url, '_blank');
                 //win.focus();
             }
         }
