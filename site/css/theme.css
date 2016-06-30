@@ -543,7 +543,7 @@ footer.collapsed {
 .modal {
     background: transparent;
     display: block;
-    height: calc(100% + 500px);
+    height: 100%;
     left: 0;
     opacity: 0;
     position: absolute;
