@@ -5,7 +5,7 @@
 // =============================================================================
 -->
 <!DOCTYPE html>
-<html>
+<html ng-app="sebxxPortfolio">
 
 <head>
     <base href="/portfolio/">
@@ -53,7 +53,7 @@
 </head>
 
 <!--<body ng-app="sebxxPortfolio" ng-scrollbars ng-scrollbars-config="mainScroll">-->
-<body ng-app="sebxxPortfolio">
+<body>
     <div id="top" class="site" ng-controller="MainCtrl">
         <ng-include src="'site/modules/global/header.html'"></ng-include>
         <div id="siteContainer" ng-view ng-scrollbars ng-scrollbars-config="mainScroll"></div>
