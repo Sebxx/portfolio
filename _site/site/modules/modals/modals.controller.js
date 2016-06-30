@@ -26,8 +26,9 @@
                 }
             };
             $scope.goToExternal = function(e, url) {
+                console.log(url);
                 var win = window.open(url, '_blank');
-                win.focus();
+                //win.focus();
             }
         }
 })();
