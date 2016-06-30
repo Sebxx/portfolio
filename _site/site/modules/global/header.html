@@ -23,11 +23,11 @@
 			<ul class="sideMenu">
 				<li ng-repeat="item in menuItems">
 					<a ng-class="{'submenuParent': item.hasChildren}" ng-click="goToPath($event, item.url, 'parent')" onclick="return false;">
-						<i class="fa {{item.icon}}" aria-hidden="true"></i><span>{{item.name}}</span>
+						<i class="fa {{item.icon}}" aria-hidden="true"></i><span>{{item.es}}</span>
 					</a>
 					<div ng-class="{'submenu': item.hasChildren}" ng-if="item.hasChildren">
 						<a ng-repeat="subitem in item.children" class="subitem" ng-click="goToPath($event, subitem.url, 'subitem')" onclick="return false;">
-							<i class="fa {{subitem.icon}}" aria-hidden="true"></i><span>{{subitem.name}}</span>
+							<i class="fa {{subitem.icon}}" aria-hidden="true"></i><span>{{subitem.es}}</span>
 						</a>
 					</div>
 				</li>

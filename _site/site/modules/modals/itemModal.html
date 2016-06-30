@@ -4,7 +4,7 @@
         <figure>
             <img ng-src="{{item.thumbnail}}">
             <span>
-                <a href="{{item.web}}" target="_blank" ng-bind-html="item.web | to_trusted"></a>
+                <a ng-href="http://{{item.web | to_trusted}}" target="_blank">{{item.web | to_trusted}}</a>
             </span>
         </figure>
         <div class="itemDescription">
@@ -15,7 +15,7 @@
                     <img ng-src="{{technologies[tech].icon}}">
                 </span>
             </div>
-            <div class="text" ng-bind-html="item.description | to_trusted"></div>
+            <div class="text" ng-bind-html="item.es | to_trusted"></div>
         </div>
     </div>
 </div>
