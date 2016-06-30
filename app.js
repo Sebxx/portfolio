@@ -24,7 +24,6 @@ angular.module('sebxxPortfolio', [
 
 .run(['$rootScope', '$timeout', function($rootScope, $timeout){
     $rootScope.$on('$routeChangeStart', function(){
-        console.log("entro");
         jQuery("#top.site").css("filter", "blur(30px)").css("-webkit-filter", "blur(20px)");
         jQuery("html, body").animate({ scrollTop: 0 }, "slow");
         jQuery(".sebxxSpinner").show();
@@ -34,7 +33,6 @@ angular.module('sebxxPortfolio', [
         $timeout(function(){
             jQuery("#top.site").css("filter", "blur(0)").css("-webkit-filter", "blur(0)");
             jQuery(".sebxxSpinner").hide();
-            console.log("salgo");
         }, 2700);
     });
 

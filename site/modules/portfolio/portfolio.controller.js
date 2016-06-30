@@ -12,7 +12,6 @@
 				$scope.items = res;
 			});
 			$scope.launchModal = function(el) {
-				console.log(el);
                 $rootScope.modalInit(el);
             }
 		}

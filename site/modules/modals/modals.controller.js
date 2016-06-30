@@ -10,6 +10,7 @@
         function ItemModalController($rootScope, $scope, $window){
             
             $rootScope.modalInit = function(el) {
+                jQuery("#top.site").css("filter", "blur(30px)").css("-webkit-filter", "blur(20px)");
                 $scope.item = el;
                 jQuery("#portfolioItemModal").animate({
                     "opacity": 1,
@@ -23,6 +24,7 @@
                         "z-index": -1
                     }, 500, "linear");
                     $scope.item = {};
+                    jQuery("#top.site").css("filter", "blur(0)").css("-webkit-filter", "blur(0)");
                 }
             };
             $scope.goToExternal = function(e, url) {
