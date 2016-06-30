@@ -3,7 +3,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_et.png",
 		"title": "El Tesoro Parque Comercial",
 		"technologies": ["android", "ios", "js", "html5", "css3", "node", "mongo", "cordova", "ionic"],
-		"web": "eltesoro.com.co/",
+		"web": "eltesoro.com.co",
 		"description": "The mobile app for El Tesoro Parque Comercial is not only a mobile version of the website but a tool which allows the company to interact with their users, letting them know more about the users' geolocalization inside the mall as well as the users interests for sending them notifications depending on that. The users can signup for register their invoices and get special privileges from the stores in the mall.",
 		"es": "La aplicación móvil para El Tesoro Parque Comercial no es tan solo una versión móvil del sitio web sino que, además, es una herramienta que permite a la compañía interactuar con sus usuarios, permitiéndoles saber más sobre la geolocalización de los usuarios en el centro comercial así como sus intereses para el envío de notificaciones. Los usuarios se pueden registrar para guardar y enviar sus facturas de compra y obtener privilegios especiales de las tiendas."
 	},
@@ -11,7 +11,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_fix.png",
 		"title": "Fix",
 		"technologies": ["android", "ios", "js", "html5", "css3", "node", "mongo", "cordova", "ionic"],
-		"web": "fixapp.com.co/",
+		"web": "fixapp.com.co",
 		"description": "This app is developed for a company which manages the inventory in differents stores and brands around the country. The clients can send request for fix a broken item or for maintanance for another one. The administrator gets the request, sends a quote and schedules the provider for make the job.",
 		"es": "Esta aplicación fue desarrollada para una empresa que gestiona el inventorio de diferentes tiendas y marcas en el país. Los clientes envían solicitudes para arreglar un ítem dañado o para el mantenimiento de otro. El administrador recibe la solicitud, envía una cotización y programa un proveedor para el trabajo."
 	}

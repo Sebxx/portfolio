@@ -3,7 +3,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_et.png",
 		"title": "El Tesoro Parque Comercial",
 		"technologies": ["js", "html5", "css3", "angular", "node", "mongo"],
-		"web": "eltesoro.com.co/",
+		"web": "eltesoro.com.co",
 		"description": "El Tesoro Parque Comercial was the first project in which I used technologies like AngularJS and NodeJS. In the begining, it was only a backend&frontend site with WordPress as CMS and an hybrid frontend between AngularJS and PHP. The second and actual version is made with multiple servers: the CMS is in an IP with PHP and MySql (WordPress) and the frontend in another IP with NodeJS as server and AngularJS as frontend. Aditionally, I developed an administrative tool for managing wifi users & user registration made with NodeJS as server and backend and AngularJS as frontend.",
 		"es": "El Tesoro Parque Comercial fue el primer proyecto en el que usé tecnologías como AngularJS y NodeJS. Al principio era sólo un sitio sencillo desarrollado con WordPress como CMS y un híbrido entre AngularJS y PHP en el frontend. La segunda y actual versión está hecha con varios servidores: el CMS está en una IP con WordPress y el frontend está en otra IP con NodeJS como servidor y AngularJS como lenguaje principal del frontend. Además, desarrollé una herramienta administrativa para gestionar los usuarios wifi y el registro de usuarios, desarrollada con NodeJS como servidor y lenguaje backend y AngularJS como frontend."
 	},
@@ -11,7 +11,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_tig.png",
 		"title": "Tecnigrifos & Grifos TIG",
 		"technologies": ["js", "html5", "css3", "php", "wp", "mysql"],
-		"web": "www.grifostig.com/",
+		"web": "www.grifostig.com",
 		"description": "Made with WordPress as CMS and PHP as backend, Grifos TIG represents the most of my work as web developer. With built-in themes, I coded on this few modifications in frontend and in backend to make it mobile-friendly and customizable for the customer.",
 		"es": "Hecho con WordPress como CMS y PHP como backend, Grifos TIG representa la mayor parte de mi trabajo como desarrollador web. Desarrollado con temas comprados, hice algunas madificaciones de código en el frontend y el backend para hacerlo más amigable a los dispositivos móviles y personalizable al cliente."
 	},
@@ -19,7 +19,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_gya.png",
 		"title": "Inmobiliaria Gómez y Asociados",
 		"technologies": ["js", "html5", "css3", "php", "wp", "mysql"],
-		"web": "www.gomezyasociados.com.co/",
+		"web": "www.gomezyasociados.com.co",
 		"description": "This project is not only about the development of a fresh, friendly and responsive frontend but about the customization of specific modules for managing user registration, profile and favorite items as well as most-viewed items. The most important thing about it is the development of a custom search-engine, based on an external XML document of items. The backend platform allows the administrator to modify important options for marketing management.",
 		"es": "Este proyecto no solo es el desarrollo de una interfaz fresca, amigable y responsive sino que contiene módulos específicos para el cliente como la gestión de registro de usuarios, perfiles e ítems favoritos así como ítems más vistos. Lo más importante en este proyecto es el desarrollo de un motor de búsqueda personalizado, basado en un documento XML externo para los ítems de la compañía. El backend permite al administrador modificar opciones importantes para la gestión de marketing."
 	},
@@ -27,7 +27,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_difcre.png",
 		"title": "Difusión Creativa",
 		"technologies": ["js", "html5", "css3", "php", "wp", "mysql"],
-		"web": "www.difusioncreativa.com.co/",
+		"web": "www.difusioncreativa.com.co",
 		"description": "With specific, short and concise information, this landingpage has fancy animations which engage the client and allows to increase the contactform submits and increase the sales and/or site visits.",
 		"es": "Con información clara, corta y concreta, este landingpage tiene agradables animaciones que invitan al cliente a continuar en el sitio, incrementar los envíos de formularios de contacto así como las ventas y/o las visitas al sitio."
 	},
@@ -35,7 +35,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_allre.png",
 		"title": "ALL Relocate moving van lines co",
 		"technologies": ["js", "html5", "css3", "php", "wp", "mysql"],
-		"web": "www.allrelocate.com/",
+		"web": "www.allrelocate.com",
 		"description": "The important development for this site was a price calculator for an important moving company in United States. Here, the possible clients will fill a step-by-step form and depending on the origin, destination and large of move, the tool will ask for validated phone and email and show an aproximate price. The company will contact the client to make effective the quote. The administrator can set all the possible variables for the quotes.",
 		"es": "Lo importante de este desarrollo fue un calculador de precios para una empresa importante de mudanzas en Estados Unidos. En ella, los posibles clientes llenarán un formulario paso a paso y dependiendo del origen, destino y tamaño de la mudanza, la herramienta validará el número de teléfono y el email y mostrará un precio aproximado. La compañía contactará luego al cliente para hacer efectiva la cotización. El administrador puede configurar todas las posibles variables para las cotizaciones."
 	}

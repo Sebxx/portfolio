@@ -69,7 +69,7 @@ header #sidebar.collapsed nav ul.sideMenu li a.submenuParent::after {
 
 header #sidebar {
 	background: #929487 none repeat scroll 0 0;
-	display: inline-block;
+	display: inline-table;
 	max-height: 100%;
 	min-height: 100%;
 	position: absolute;
@@ -167,10 +167,14 @@ footer {
     font-size: 0.6em;
     height: 50px;
     line-height: 1.5;
-    margin-left: 20%;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     transition: all ease 0.5s;
+    width: 100%;
+}
+
+footer .footerContent {
+    margin-left: 20%;
     width: 80%;
 }
 
@@ -221,6 +225,80 @@ footer.collapsed {
     font-size: 1em;
     font-weight: lighter;
     padding: 5px;
+}
+
+/*
+    SPINNER animation
+*/
+
+.sebxxSpinner {
+    display: none;
+    height: 80px;
+    left: calc(50% + 40px);
+    margin: 100px auto;
+    position: absolute;
+    top: 100px;
+    width: 80px;
+    z-index: 2147483647;
+}
+
+.sebxxSpinner .cube1, .sebxxSpinner .cube2, .sebxxSpinner .cube3 {
+  background-color: #D4550F;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-cubemove 2.7s infinite ease-in-out;
+  animation: sk-cubemove 2.7s infinite ease-in-out;
+}
+
+.sebxxSpinner .cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.sebxxSpinner .cube3 {
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+}
+
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(50px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(50px) translateY(50px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(50px) rotate(-270deg) scale(0.5) }
+  50% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+  25% { 
+    transform: translateX(50px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(50px) rotate(-90deg) scale(0.5);
+  } 50% { 
+    transform: translateX(50px) translateY(50px) rotate(-179deg);
+    -webkit-transform: translateX(50px) translateY(50px) rotate(-179deg);
+  } 50.1% { 
+    transform: translateX(50px) translateY(50px) rotate(-180deg);
+    -webkit-transform: translateX(50px) translateY(50px) rotate(-180deg);
+  } 75% { 
+    transform: translateX(0px) translateY(50px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(50px) rotate(-270deg) scale(0.5);
+  } 100% { 
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+/*
+    END spinner
+*/
+
+#top {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 #siteContainer {
@@ -567,6 +645,9 @@ footer.collapsed {
 */
 
 @media screen and (max-width: 980px) {
+    header #sidebar {
+        display: inline-block;
+    }
     #sidebar figure,
     ul.sideMenu li > a span,
     header #sidebar i.fa-compress {
@@ -597,9 +678,13 @@ footer.collapsed {
         margin-left: 50px;
         width: calc(100% - 50px);
     }
+    footer .footerContent {
+        margin-left: 0;
+        width: auto;
+    }
     #siteContainer {
         margin-left: 50px;
-        width: auto;
+        width: calc(100% - 50px);
     }
     #siteContainer .heading {
         height: 250px;
@@ -617,6 +702,9 @@ footer.collapsed {
         left: 50px;
         width: 250px;
         padding: 10px 10px 10px 60px;
+    }
+    .sebxxSpinner {
+        left: 50%;
     }
 }
 
@@ -671,5 +759,9 @@ footer.collapsed {
 
     .modal .modalContainer .technos > span:nth-child(4) {
         margin-right: 0;
+    }
+
+    .sebxxSpinner {
+        left: calc(50% - 25px);
     }
 }

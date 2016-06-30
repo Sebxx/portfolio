@@ -28,7 +28,6 @@
             $scope.goToExternal = function(e, url) {
                 var extWindow = window;
                 extWindow.open("http://" + url, '_blank');
-                //win.focus();
             }
         }
 })();

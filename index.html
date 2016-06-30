@@ -8,7 +8,8 @@
 <html ng-app="sebxxPortfolio">
 
 <head>
-    <base href="/portfolio/">
+    <!--<base href="/portfolio/">-->
+    <base href="/">
     <title>@Sebxx's portfolio</title>
     <meta charset="UTF-8" />
     <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" name="viewport" />
@@ -54,6 +55,11 @@
 
 <!--<body ng-app="sebxxPortfolio" ng-scrollbars ng-scrollbars-config="mainScroll">-->
 <body>
+    <div class="sebxxSpinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+      <div class="cube3"></div>
+    </div>
     <div id="top" class="site" ng-controller="MainCtrl">
         <ng-include src="'site/modules/global/header.html'"></ng-include>
         <div id="siteContainer" ng-view ng-scrollbars ng-scrollbars-config="mainScroll"></div>
