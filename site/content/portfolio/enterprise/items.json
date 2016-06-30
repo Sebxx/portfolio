@@ -3,7 +3,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_gya.png",
 		"title": "Inmobiliaria Gómez y Asociados",
 		"technologies": ["js", "html5", "css3", "php", "wp", "mysql"],
-		"web": "gomezyasociados.com.co",
+		"web": "http://www.gomezyasociados.com.co/",
 		"description": "This project is not only about the development of a fresh, friendly and responsive frontend but about the customization of specific modules for managing user registration, profile and favorite items as well as most-viewed items. The most important thing about it is the development of a custom search-engine, based on an external XML document of items. The backend platform allows the administrator to modify important options for marketing management.",
 		"es": "Este proyecto no solo es el desarrollo de una interfaz fresca, amigable y responsive sino que contiene módulos específicos para el cliente como la gestión de registro de usuarios, perfiles e ítems favoritos así como ítems más vistos. Lo más importante en este proyecto es el desarrollo de un motor de búsqueda personalizado, basado en un documento XML externo para los ítems de la compañía. El backend permite al administrador modificar opciones importantes para la gestión de marketing."
 	},
@@ -11,7 +11,7 @@
 		"thumbnail": "site/content/img/portfolio/thumb_bdi.png",
 		"title": "El Banco de Imágenes",
 		"technologies": ["js", "html5", "css3", "php", "wp", "mysql"],
-		"web": "elbancodeimagenes.com",
+		"web": "http://elbancodeimagenes.com/",
 		"description": "This tool allows a photography company to upload albums of pictures in bulk, compressed in zip format. The tool will create a post for every picture in the zip, getting its camera metadata and indexing it in a custom search-engine. It will show a report of the uploaded zip as well as the most-viewed & most-downloaded pictures. In the frontend, the registrated and subscribed users could download the picture or video in different sizes and resolution; or create inline-collections of items for later downloading.",
 		"es": "Esta herramienta permite a una compañía de fotografía subir múltiples imágenes en un archivo zip. La herramienta creará un post para cada imagen del zip, obteniendo e indexando los metadatos de la camara en un motor de búsqueda personalizado. Se crearán automáticamente reportes de los archivos subidos así como las imágenes más vistas y las más descargadas. En el frontend, los usuarios registrados y suscritos podrán descargar la imagen o el vídeo en diferentes tamaños y resoluciones o crear colecciones en línea de items para descargar luego."
 	},

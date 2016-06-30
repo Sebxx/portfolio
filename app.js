@@ -18,8 +18,8 @@ angular.module('sebxxPortfolio', [
 .value('_', window._)
 
 .config(['$urlRouterProvider', '$locationProvider',  function ($urlRouterProvider, $locationProvider) {
-    $urlRouterProvider.otherwise('/');
-    //$locationProvider.html5Mode(true).hashPrefix('!');
+    $locationProvider.html5Mode(true).hashPrefix('!');
+    //$urlRouterProvider.otherwise('/');
 }])
 
 .run(['$rootScope', function($rootScope){
