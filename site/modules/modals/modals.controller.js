@@ -27,7 +27,8 @@
             };
             $scope.goToExternal = function(e, url) {
                 console.log(e);
-                $window.open(url, '_blank');
+                window.location.href = 'http://' + url;
+                //$window.open(url, '_blank');
                 //win.focus();
             }
         }
