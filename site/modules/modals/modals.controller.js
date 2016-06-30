@@ -25,5 +25,9 @@
                     $scope.item = {};
                 }
             };
+            $scope.goToExternal = function(e, url) {
+                var win = window.open(url, '_blank');
+                win.focus();
+            }
         }
 })();
