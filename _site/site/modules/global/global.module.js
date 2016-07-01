@@ -15,6 +15,13 @@
       function HeaderController($scope, $location){
         $scope.menuItems = [
             {
+              name: 'Curriculum vitae',
+              es: 'Currículum vítae',
+              url: '/cv',
+              icon: 'fa-tasks',
+              hasChildren: false
+            },
+            {
               name: 'Profile',
               es: 'Perfil',
               url: '/profile',

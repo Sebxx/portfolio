@@ -1,0 +1,27 @@
+<!--
+// =============================================================================
+// CV.HTML
+// @Sebxx' portfolio
+// =============================================================================
+-->
+<div class="heading noName"></div>
+<div class="siteContent">
+	<section class="description cv">
+		<h3 ng-bind-html="cv.training.icon + cv.training.esTitle | to_trusted"></h3>
+		<div class="level" ng-repeat="level in cv.training.items">
+			<h4 ng-bind-html="level.esName | to_trusted"></h4>
+			<small ng-bind-html="level.esType | to_trusted"></small>
+			<span class="levelDesc" ng-bind-html="level.institution | to_trusted"></span>
+			<span class="levelDesc" ng-bind-html="level.year | to_trusted"></span>
+		</div>
+	</section>
+	<section class="description exp cv">
+		<h3 ng-bind-html="cv.experience.icon + cv.experience.esTitle | to_trusted"></h3>
+		<div class="level" ng-repeat="level in cv.experience.items">
+			<h4 ng-bind-html="level.esName | to_trusted"></h4>
+			<small ng-bind-html="level.company | to_trusted"></small>
+			<span class="levelDesc" ng-bind-html="level.esTime | to_trusted"></span>
+			<p class="job" ng-bind-html="level.jobEs | to_trusted"></p>
+		</div>
+	</section>
+</div>

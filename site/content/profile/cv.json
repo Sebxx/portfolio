@@ -1,0 +1,119 @@
+{
+	"training": {
+		"title": "Training",
+		"esTitle": "Formación académica",
+		"icon": "<i class='fa fa-graduation-cap' aria-hidden='true'></i>",
+		"items": [
+			{
+				"name": "",
+				"esName": "Tecnología en Sistemas de Información",
+				"type": "",
+				"esType": "Carrera profesional",
+				"institution": "Instituto Tecnológico Metropolitano -ITM- Medellín, Colombia",
+				"year": "2014",
+				"notes": "",
+				"esNotes": "Título en trámite"
+			},
+			{
+				"name": "",
+				"esName": "Derechos Humanos (DDHH), Derecho Internacional Humanitario (DIH) y Derechos Económicos, Sociales, Culturales y Ambientales (DESCA)",
+				"type": "",
+				"esType": "Diplomado",
+				"institution": "Institución Universitaria ESUMER- Medellín, Colombia",
+				"year": "2012",
+				"notes": "",
+				"esNotes": ""
+			},
+			{
+				"name": "",
+				"esName": "Curso de AngularJS",
+				"type": "",
+				"esType": "Cursos y certificados",
+				"institution": "<a href='http://platzi.com' target='_blank'>Platzi INC</a>",
+				"year": "2016",
+				"notes": "",
+				"esNotes": "<a href='https://platzi.com/@sebx_p/' target='_blank'>Ver certificado en Platzi</a>"
+			},
+			{
+				"name": "",
+				"esName": "Curso de HTML5 y CSS3",
+				"type": "",
+				"esType": "Cursos y certificados",
+				"institution": "<a href='http://platzi.com' target='_blank'>Platzi INC</a>",
+				"year": "2016",
+				"notes": "",
+				"esNotes": "<a href='https://platzi.com/@sebx_p/' target='_blank'>Ver certificado en Platzi</a>"
+			},
+			{
+				"name": "",
+				"esName": "Curso de JavaScript y jQuery",
+				"type": "",
+				"esType": "Cursos y certificados",
+				"institution": "<a href='http://platzi.com' target='_blank'>Platzi INC</a>",
+				"year": "2016",
+				"notes": "",
+				"esNotes": "<a href='https://platzi.com/@sebx_p/' target='_blank'>Ver certificado en Platzi</a>"
+			},
+			{
+				"name": "",
+				"esName": "Curso de Responsive Design",
+				"type": "",
+				"esType": "Cursos y certificados",
+				"institution": "<a href='http://platzi.com' target='_blank'>Platzi INC</a>",
+				"year": "2016",
+				"notes": "",
+				"esNotes": "<a href='https://platzi.com/@sebx_p/' target='_blank'>Ver certificado en Platzi</a>"
+			},
+			{
+				"name": "",
+				"esName": "Curso de Profesional de Git y Github",
+				"type": "",
+				"esType": "Cursos y certificados",
+				"institution": "<a href='http://platzi.com' target='_blank'>Platzi INC</a>",
+				"year": "2015",
+				"notes": "",
+				"esNotes": "<a href='https://platzi.com/@sebx_p/' target='_blank'>Ver certificado en Platzi</a>"
+			}
+		]
+	},
+	"experience": {
+		"title": "Experience",
+		"esTitle": "Experiencia",
+		"icon": "<i class='fa fa-black-tie' aria-hidden='true'></i>",
+		"items": [
+			{
+				"name": "",
+				"esName": "Project manager",
+				"company": "LM Network Creativo",
+				"job": "",
+				"jobEs": "Levantamiento de requerimientos e implementación de metodologías ágiles para el desarrollo de sitios web y aplicaciones, tanto web como mobile.<br/>Seguimiento de los proyectos mediante el uso de diágramas de Gantt y sprints de scrum.<br/>Coordinación del equipo de diseño y desarrollo para el cumplimiento de los tiempos y proyectos y verificación de funcionalidad y calidad de los proyectos.<br/>Participación en el equipo mediante el desarrollo, principalmente Backend, pero con amplia participación en el Frontend y en la implementación de nuevas tecnologías.",
+				"time": "",
+				"esTime": "agosto de 2015 a actualidad",
+				"notes": "",
+				"esNotes": ""
+			},
+			{
+				"name": "",
+				"esName": "Fullstack web developer",
+				"company": "LM Network Creativo",
+				"job": "",
+				"jobEs": "Desarrollo para la web con PHP, diseño y conección a bases de datos. Estrategias y tácticas lógicas para aumentar el rendimiento de los sitios así como la adhesión de módulos personalizados para mejorar la funcionalidad de los sitios con respecto a la amigabilidad con los clientes.<br/>Desarrollo para la web y para dispositivos móviles con tecnologías óptimas y ágiles, orientado a manejo de grandes volúmenes de datos, mediante la implementación de plataformas JavaScript fullstack (HTML5 + CSS3 + AngularJS + NodeJS + MongoDB).",
+				"time": "",
+				"esTime": "abril de 2014 a actualidad",
+				"notes": "",
+				"esNotes": ""
+			},
+			{
+				"name": "",
+				"esName": "Backend web developer",
+				"company": "Mango Pixel",
+				"job": "",
+				"jobEs": "Desarrollo para la web con PHP, diseño y conección a bases de datos. Estrategias y tácticas lógicas para aumentar el rendimiento de los sitios así como la adhesión de módulos personalizados para mejorar la funcionalidad de los sitios con respecto a la amigabilidad con los clientes.<br/>Desarrollo de soluciones empresariales y soluciones a la medida basadas en análisis previos al levantamiento de requerimiento en la búsqueda de facilitar la labor productiva, comercial y operacional a las empresas tanto consolidadas como emergentes.",
+				"time": "",
+				"esTime": "enero de 2013 a julio de 2014",
+				"notes": "",
+				"esNotes": ""
+			}
+		]
+	}
+}

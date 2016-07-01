@@ -8,9 +8,11 @@
 	<div id="sidebar">
 		<i class="fa fa-compress" aria-hidden="true" ng-click="collapseMenu()"></i>
 		<figure class="profilePicture">
+			<span>
+				<strong>@Sebxx</strong>
+				<small ng-bind-html="profProfile | to_trusted"></small>
+			</span>
 			<img ng-src="{{profilePic}}" />
-			<strong>@Sebxx</strong>
-			<small ng-bind-html="profProfile | to_trusted"></small>
 		</figure>
 		<div class="socialMedia">
 			<a href="https://github.com/Sebxx/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>

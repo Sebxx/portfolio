@@ -3,17 +3,51 @@
 		"title": "Who am I",
 		"content": "Sebastián Pulgarín is a youth with great personal and professional perspectives. His passion about software development and informatic systems began at early age, begining the highschool, and go to a related career in college was always his wish, of course it was fulfilled. However, Sebastián not only made his academical and professional training but, restless and featherbrained, he began a personal, social and political training in his universitary life, that it still accompanying him. In the first cycle of his professional career he was forged like a student leader, winning the maximum student representation, elected by popular vote. He was delegated to several political and social youth events, at national and international level, and his academical and social enviroment offered him the posibility of a rich cultural exchange, strengthening his knowledge and improving his habits. All of that has forged in him a human and professional ethic criterion that has allowed him to dizzily improve his knowledge, both technical and practical, about the actual technological and informatic solutions as well as his need for get over his own perspectives about his daily job. Sebastián is a geek. The more he learns, the more he wants to know; and the more he understand the strides of the technological advance, the more he wants to leave the 'conventional' technologies that he feels they stagnate his professional life.",
 		"esTitle": "Quién soy",
-		"es": "Sebastián Pulgarín es un joven con enormes perspectivas personales y profesionales. Su pasión por el desarrollo y la informática inició desde muy corta edad, iniciando su bachillerato, y entrar a una carrera profesional relacionada siempre fue su deseo, por supuesto cumplido. Sin embargo, Sebastián no se dedicó solamente a su formación académica y profesional sino que, de forma inquieta y necia, inició en su vida universitaria una formación personal, social y política que lo acompaña aún. Durante el primer ciclo de su carrera profesional se forjó como dirigente estudiantil, llegando a ocupar el máximo cargo de representación estudiantil por elección popular en su institución. Delegado a diversos espacios políticos y sociales del orden juvenil, a nivel nacional e internacional, su ambiente académico y social le brindó la posibilidad de un intercambio cultural en todas las esferas, fortaleciendo conocimientos y mejorando hábitos. Todo aquello forjó en él un criterio de ética humana y profesional que le ha permitido avanzar vertiginosamente en sus conocimientos técnicos y prácticos en torno a las soluciones tecnológicas e informáticas actuales y en la necesidad de superar sus perspectivas en el quéhacer diario de su vida laboral. Sebastián es un gomoso de la tecnología. Cuanto más aprende, más quiere saber; y cuanto más comprende los pasos de gigante con que avanza la tecnología, más quiere desprenderse de aquellas tecnologías 'clásicas' o 'convencionales' que siente que estancan su vida profesional. Podrían decirse algunas cosas más de la vida de Sebastián pero esa no es la intención ni la biografía autorizada suya."
+		"es": "Sebastián Pulgarín es un joven con enormes perspectivas personales y profesionales. Su pasión por el desarrollo y la informática inició desde muy corta edad, iniciando su bachillerato, y entrar a una carrera profesional relacionada siempre fue su deseo, por supuesto cumplido. Sin embargo, Sebastián no se dedicó solamente a su formación académica y profesional sino que, de forma inquieta y necia, inició en su vida universitaria una formación personal, social y política que lo acompaña aún. Durante el primer ciclo de su carrera profesional se forjó como dirigente estudiantil, llegando a ocupar el máximo cargo de representación estudiantil por elección popular en su institución. Delegado a diversos espacios políticos y sociales del orden juvenil, a nivel nacional e internacional, su ambiente académico y social le brindó la posibilidad de un intercambio cultural en todas las esferas, fortaleciendo conocimientos y mejorando hábitos. Todo aquello forjó en él un criterio de ética humana y profesional que le ha permitido avanzar vertiginosamente en sus conocimientos técnicos y prácticos en torno a las soluciones tecnológicas e informáticas actuales y en la necesidad de superar sus perspectivas en el quéhacer diario de su vida laboral. Sebastián es un gomoso de la tecnología. Cuanto más aprende, más quiere saber; y cuanto más comprende los pasos de gigante con que avanza la tecnología, más quiere desprenderse de aquellas tecnologías 'convencionales' que siente que estancan su vida profesional. Podrían decirse algunas cosas más de la vida de Sebastián pero esa no es la intención ni esta es su biografía autorizada."
 	},
 	"profprofile": {
 		"title": "Professional profile",
 		"content": "",
 		"esTitle": "Perfil profesional",
-		"es": "Tecnólogo en sistemas de información (pendiente de título), emprendedor y con muchas expectativas hacia el futuro. Capacidad de liderazgo en grupos y proyectos propios y ajenos. Experiencia en creación y/o logística de proyectos y eventos académicos y culturales y de administración de recursos humanos en proyectos académicos, universitarios y laborales. Joven con capacidad y necesidad de aprender y mejorar nuevas cosas cada día y de dar miradas críticas y constructivas a los procesos en los que se vea involucrado directa o indirectamente, personal o socialmente. Fácil adaptación a cambios en entornos laborales, académicos, culturales y sociales y capacidad de investigación y retroalimentación en dichos cambios para aprendizaje propio y uso de los mismos en los procesos diarios.<br/> Conocimiento avanzado y experiencia en el desarrollo de plugins y temas para WordPress. Experiencia en el desarrollo de REST APIs y en su implementación mediante el uso de subdominios mediante NodeJS con proxy. Experiencia en el liderazgo de equipos con metodologías ágiles como Scrum y herramientas de gestión de issues como Jira así como del seguimiento de los proyectos y su cumplimiento con la elaboración de diagramas de Gantt.",
+		"es": "Tecnólogo en sistemas de información (pendiente de título), emprendedor y con muchas expectativas hacia el futuro. Capacidad de liderazgo en grupos y proyectos propios y ajenos. Experiencia en creación y/o logística de proyectos y eventos académicos y culturales y de administración de recursos humanos en proyectos académicos, universitarios y laborales. Joven con capacidad y necesidad de aprender y mejorar nuevas cosas cada día y de dar miradas críticas y constructivas a los procesos en los que se vea involucrado directa o indirectamente, personal o socialmente. Fácil adaptación a cambios en entornos laborales, académicos, culturales y sociales y capacidad de investigación y retroalimentación en dichos cambios para aprendizaje propio y uso de los mismos en los procesos diarios.<br/> Conocimiento avanzado y experiencia en el desarrollo de plugins y temas para WordPress. Experiencia en el desarrollo de REST APIs y en su implementación mediante el uso de subdominios en servidores NodeJS con proxy. Experiencia en el liderazgo de equipos con metodologías ágiles como Scrum y herramientas de gestión de issues como Jira así como del seguimiento de los proyectos y su cumplimiento con la elaboración de diagramas de Gantt.",
 		"skills": {
 				"title": "Skills",
 				"esTitle": "Habilidades",
 				"objs": [
+			{
+				"level": "English",
+				"esLevel": "Inglés",
+				"skills": [
+					{
+						"type": "Reading",
+						"items": [
+							{"name": "High"}
+						]
+						
+					},
+					{
+						"type": "Writing",
+						"items": [
+							{"name": "High"}
+						]
+						
+					},
+					{
+						"type": "Speaking",
+						"items": [
+							{"name": "Medium"}
+						]
+						
+					},
+					{
+						"type": "Listening",
+						"items": [
+							{"name": "Medium"}
+						]
+						
+					}
+				]
+			},
 			{
 				"level": "Basic",
 				"esLevel": "Básico",
@@ -128,6 +162,6 @@
 		"title": "What do I do",
 		"content": "",
 		"esTitle": "Qué hago",
-		"es": "Si me preguntas que me gusta hacer, probablemente responderé que me apasiona aprender, no importa en qué ámbito, y eso incluye un enorme listado de actividades que se salen de mi área profesional. Así que, para aterrizarlo, te diré que programar es una de esas actividades y seguramente una de las principales. Pero si me pones a elegir entre lenguajes de programación y/o tecnologías, de lejos elegiré JavaScript, no sólo del lado del cliente sino también como backend y servidor (NodeJS). Y seguramente si debo programar en PHP con MySql, por ejemplo, lo haré pero con un entusiasmo mucho menor. Es por eso que he decidido poner mi perfil en el portafolio como 'JavaScript fullstack developer'."
+		"es": "Si me preguntas qué me gusta hacer, probablemente responderé que me apasiona aprender, no importa en qué ámbito, y eso incluye un enorme listado de actividades que se salen de mi área profesional. Así que, para aterrizarlo, te diré que programar es una de esas actividades y seguramente una de las principales. Pero si me pones a elegir entre lenguajes de programación y/o tecnologías, de lejos elegiré JavaScript, no sólo del lado del cliente sino también como backend y servidor (NodeJS). Y seguramente si debo programar en PHP con MySql, por ejemplo, lo haré pero con un entusiasmo mucho menor. La dirigencia es también una de esas actividades principales que se ajusta a cualquier ámbito; así que si en lugar de sólo programar, mi tarea fuese administrar u orientar proyectos y equipos, seguramente también estaré a gusto. No obstante, por más que esté haciendo mis actividades preferidas, en el momento en que su desarrollo interfiere con el resto de mi vida y la presión o estrés alcanzan mi límite de tranquilidad, dejará de ser una actividad hecha con entusiasmo a una hecho con obligación y desidia y más temprano que tarde la dejaré de lado."
 	}
 }

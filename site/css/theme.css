@@ -201,17 +201,24 @@ footer.collapsed {
     text-align: center;
 }
 
-#sidebar figure.profilePicture img {
-	border-radius: 100%;
-    display: block;
-    height: 200px;
-    margin: 0 auto;
-    padding: 0 15px;
+#sidebar figure.profilePicture span {
+    display: inline-block;
     position: relative;
-    width: auto;
+    vertical-align: top;
+    width: 40%;
 }
 
-#sidebar .profilePicture > strong {
+
+#sidebar figure.profilePicture img {
+    border-radius: 100%;
+    display: inline-block;
+    height: auto;
+    padding: 0 15px;
+    position: relative;
+    width: 40%;
+}
+
+#sidebar .profilePicture span strong {
     color: #f4f5ed;
     display: block;
     font-size: 1.3em;
@@ -219,7 +226,7 @@ footer.collapsed {
     padding: 5px;
 }
 
-#sidebar .profilePicture > small {
+#sidebar .profilePicture span small {
     color: #f4f5ed;
     display: block;
     font-size: 1em;
@@ -634,6 +641,124 @@ footer.collapsed {
     line-height: 1.1;
     padding: 0 5%;
     position: relative;
+}
+
+section.description.cv h3 {
+    display: block;
+    font-size: 2em;
+    position: relative;
+}
+
+section.description.cv h3 i {
+    color: #929487;
+    font-size: 1.5em;
+    left: -2em;
+    position: absolute;
+}
+
+section.cv .level {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 49%;
+}
+
+section.exp .level {
+    display: block;
+    width: 100%;
+}
+
+section.cv .level h4 {
+    margin-bottom: 0;
+}
+
+section.cv .level h4::before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1.5em;
+    left: -1em;
+    position: absolute;
+    top: 0.6em;
+}
+
+section.exp .level h4::before {
+    top: -5px;
+}
+
+section.cv .level small {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 15px;
+    position: relative;
+}
+
+section.cv .level span.levelDesc {
+    display: block;
+    font-size: 0.9em;
+    max-width: 75%;
+    padding: 5px 20px;
+    position: relative;
+}
+
+
+section.cv .level span.levelDesc > a {
+    color: #929487;
+    text-decoration: underline;
+}
+
+section.contact h3 {
+    font-size: 2em;
+}
+
+section.contact .contactItems {
+    display: block;
+    position: relative;
+    width: 80%;
+}
+
+
+section.contact .contactItems span {
+    display: inline-block;
+    padding: 20px 10px;
+    position: relative;
+    width: 46%;
+}
+
+section.contact .contactItems span  i {
+    font-size: 2em;
+    left: -1em;
+    position: absolute;
+    top: 0.5em;
+    transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    -ms-transition: all 0.5s linear 0s;
+}
+
+section.contact .contactItems a {
+    color: #929487;
+}
+
+section.contact .contactItems span a:hover i.fa-whatsapp {
+    color: #189d0e;
+}
+
+section.contact .contactItems span a:hover i.fa-envelope {
+    color: #d54b3d;
+}
+
+section.contact .contactItems span a:hover i.fa-github-square {
+    color: #0d2636;
+}
+
+section.contact .contactItems span a:hover i.fa-linkedin-square {
+    color: #0274b3;
+}
+
+section.contact .contactItems span a:hover i.fa-twitter-square {
+    color: #55acee;
 }
 
 /*
