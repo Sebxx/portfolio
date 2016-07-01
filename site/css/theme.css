@@ -413,6 +413,7 @@ footer.collapsed {
 .siteContent section {
     display: block;
     margin: 0 auto;
+    padding-bottom: 3em;
     position: relative;
     width: 80%;
 }
@@ -714,7 +715,7 @@ section.contact h3 {
 section.contact .contactItems {
     display: block;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -831,6 +832,11 @@ section.contact .contactItems span a:hover i.fa-twitter-square {
     .sebxxSpinner {
         left: 50%;
     }
+
+    section.cv .level {
+        display: block;
+        width: 100%;
+    }
 }
 
 /*
@@ -863,7 +869,6 @@ section.contact .contactItems span a:hover i.fa-twitter-square {
     }
 
     .modal .modalContainer {
-        top: 290px;
         width: 85%
     }
 
@@ -889,4 +894,19 @@ section.contact .contactItems span a:hover i.fa-twitter-square {
     .sebxxSpinner {
         left: calc(50% - 25px);
     }
+
+    section.description.cv h3 i {
+        left: initial;
+        top: -1.25em;
+    }
+
+    .description .level .levelType {
+        padding: 0 0 0 10%;
+        width: 100%;
+    }
+
+    section.contact .contactItems span {
+        width: 100%;
+    }
+
 }
